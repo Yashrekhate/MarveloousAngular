@@ -1,75 +1,72 @@
 /*
-steps to create the application
-step1 - understand the problem statement
-step2 - write the algorithm
-step3 - decide the programming language
-step4 - write the program
-step5 - test the written program
+    Steps to create the application
+
+    Step 1 : Understand the problem statement
+    Step 2 : Write the algorithm
+    Step 3 : Decide the programming language
+    Step 4 : Write the program
+    Step 5 : Test the written program 
+
 */
-//write a program which performs addition of two numbers
+
+// Wriete a program which performs addition of two numbers
+
 /*
-   Algrithm
-   START
-      Accept first number as No1
-      Accept second number as No2
-      create one variable as ANS
-      perform addition of No1 ans No2
-      store the addition into variable ANS
+    Algorithm
 
-      Display the value of ANS
-  STOP
-     
+    START
+        Accept First Number as No1
+        Accept Second Number as No2
+        Create one variable as ANS
+        Perform Addition of No1 and No2
+        Store the addition into variable ANS
+        Display the value of ANS
+    STOP
 */
 
-///////////////////////////////////////////////////
-//////////////////////////////////////////////////
-//problem Statement : write a program which performs addition of two numbers
+/////////////////////////////////////////////////////////////////////////////////
 //
-/////////////////////////////////////////////////
-////////////////////////////////////////////////
+// Problem Statement : Wriete a program which performs addition of two numbers
+//
+/////////////////////////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 
-////////////////////////////////////////////////////
-///////////////////////////////////////////////////
-///
-/// Fnction Name : Addition
-/// Input :        Unsigned ineteger,Unsigned ineteger
-/// output :        Unsigned integer
-/// Description :  performs addition of 2 numbers
-/// Author :       YASH RAJENDRA REKHATE
-/// date :         19/04/2023
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : Addition
+//  Input :         Unsigned integer, Unsigned integer
+//  Output :        Unsigned integer
+//  Description :   Performs addition of 2 numbers
+//  Author :        Piyush Manohar Khairnar
+//  Date :          18/04/2023
+//
+/////////////////////////////////////////////////////////////////////////////////
+
 unsigned int Addition(unsigned int iValue1, unsigned int iValue2)
 {
-   unsigned int iResult = 0;
-   iResult = iValue1 + iValue2;
-   return iResult;
+    unsigned int iResult = 0;
+    iResult = iValue1 + iValue2;
+    return iResult;
 }
-/////////////////////////////////////////////////
-////////////////////////////////////////////////
-//entry point function
-///////////////////////////////////////////////
-///////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+//  Entry Point function
+/////////////////////////////////////////////////////////////////////////////////
+
 int main()
 {
-   unsigned int iNo1 = 0,iNo2 = 0, iAns = 0;
+    unsigned int iNo1 = 0, iNo2 = 0, iAns = 0;
 
-   printf("enter first number :\n");
-   scanf("%d",&iNo1);
+    printf("Enter first number : \n");
+    scanf("%d",&iNo1);
 
-   printf("enter second number :\n");
-   scanf("%d",&iNo2);
+    printf("Enter second number : \n");
+    scanf("%d",&iNo2);
 
-   iAns = Addition(iNo1, iNo2);
-   printf("Addition is :%d \n", iAns);
+    iAns = Addition(iNo1, iNo2);
 
-   return 0;
+    printf("Addition is : %d \n",iAns);
+
+    return 0;
 }
-
-
-
-
-
-  
